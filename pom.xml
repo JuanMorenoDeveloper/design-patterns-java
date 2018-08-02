@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -13,6 +14,7 @@
 
   <modules>
     <module>behavioral</module>
+    <module>structural</module>
   </modules>
 
   <properties>
@@ -22,19 +24,18 @@
     <java.version>1.8</java.version>
     <!-- Test versions -->
     <mockito-core.version>2.13.0</mockito-core.version>
-    <junit.jupiter.version>5.0.3</junit.jupiter.version>
-    <junit.vintage.version>${junit.version}.3</junit.vintage.version>
-    <junit.platform.version>1.0.3</junit.platform.version>
-    <apiguardian-api.version>1.0.0</apiguardian-api.version>
+    <junit.jupiter.version>5.2.0</junit.jupiter.version>
+    <assertj.version>3.10.0</assertj.version>
     <!-- Plugins versions -->
     <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
-    <maven-surefire-plugin.version>2.20.1</maven-surefire-plugin.version>
+    <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
     <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
     <maven-pmd-plugin.version>3.9.0</maven-pmd-plugin.version>
     <spotbugs-maven-plugin.version>3.1.1</spotbugs-maven-plugin.version>
     <maven.sevntu.checkstyle.plugin.version>1.27.0</maven.sevntu.checkstyle.plugin.version>
     <maven.sevntu.checkstyle.plugin.version>1.27.0</maven.sevntu.checkstyle.plugin.version>
-    <maven.sevntu-checkstyle-check.checkstyle.version>8.7</maven.sevntu-checkstyle-check.checkstyle.version>
+    <maven.sevntu-checkstyle-check.checkstyle.version>8.7
+    </maven.sevntu-checkstyle-check.checkstyle.version>
     <maven.jacoco.plugin.version>0.8.0</maven.jacoco.plugin.version>
     <linkXRef>false</linkXRef>
   </properties>
@@ -44,15 +45,20 @@
       <!-- Modules -->
       <dependency>
         <groupId>com.proitc</groupId>
-        <artifactId>exceptions</artifactId>
+        <artifactId>strategy</artifactId>
+        <version>0.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.proitc</groupId>
+        <artifactId>structural</artifactId>
         <version>0.0.1</version>
       </dependency>
 
       <!-- Testing dependencies -->
       <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>${mockito-core.version}</version>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>${assertj.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -61,32 +67,10 @@
         <version>${junit.jupiter.version}</version>
         <scope>test</scope>
       </dependency>
-      <!-- Only required to run tests in an IDE that bundles an older version -->
-      <dependency>
-        <groupId>org.junit.platform</groupId>
-        <artifactId>junit-platform-launcher</artifactId>
-        <version>${junit.platform.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <!-- Only required to run tests in an IDE that bundles an older version -->
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
         <version>${junit.jupiter.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <!-- Only required to run tests in an IDE that bundles an older version -->
-      <dependency>
-        <groupId>org.junit.vintage</groupId>
-        <artifactId>junit-vintage-engine</artifactId>
-        <version>${junit.vintage.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <!-- To avoid compiler warnings about @API annotations in JUnit code -->
-      <dependency>
-        <groupId>org.apiguardian</groupId>
-        <artifactId>apiguardian-api</artifactId>
-        <version>${apiguardian-api.version}</version>
         <scope>test</scope>
       </dependency>
     </dependencies>
@@ -118,7 +102,7 @@
           <configuration>
             <consoleOutput>true</consoleOutput>
             <configLocation>./google_checks.xml</configLocation>
-            <excludes />
+            <excludes/>
           </configuration>
           <executions>
             <execution>
@@ -142,7 +126,7 @@
         <version>${maven-surefire-plugin.version}</version>
         <configuration>
           <excludes>
-            <exclude>**/*IT.java</exclude>
+            <exclude>**/*IntegrationTest.java</exclude>
           </excludes>
         </configuration>
       </plugin>
@@ -155,7 +139,7 @@
           <minimumTokens>100</minimumTokens>
           <linkXref>true</linkXref>
           <sourceEncoding>utf-8</sourceEncoding>
-          <targetJdk>${java.version.source}</targetJdk>
+          <targetJdk>${java.version}</targetJdk>
           <skipEmptyReport>false</skipEmptyReport>
           <ignoreLiterals>false</ignoreLiterals>
           <excludes>
@@ -181,7 +165,7 @@
           <threshold>Default</threshold>
           <findbugsXmlOutput>true</findbugsXmlOutput>
           <findbugsXmlOutputDirectory>target/site</findbugsXmlOutputDirectory>
-          <omitVisitors />
+          <omitVisitors/>
         </configuration>
       </plugin>
       <plugin>

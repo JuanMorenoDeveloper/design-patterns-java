@@ -10,7 +10,7 @@
     <version>0.0.1</version>
   </parent>
 
-  <artifactId>behavioral</artifactId>
+  <artifactId>structural</artifactId>
 
   <properties>
     <!-- Project configuration -->
