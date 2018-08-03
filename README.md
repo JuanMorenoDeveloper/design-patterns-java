@@ -1,5 +1,9 @@
 # Java Design Patterns Samples
 
-## Behavioral Patterns:
+## Behavioral
 
-* Strategy pattern
+* Strategy 
+
+## Structural
+
+* Decorator
