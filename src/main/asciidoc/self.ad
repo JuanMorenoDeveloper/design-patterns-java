@@ -2,7 +2,5 @@
 
 -
 
-[TIP]
-====
-Para imprimir agregar al link: ?showNotes=separate-page&print-pdf
-====
+* link:{slide-link}[Presentación online en: {slide-link}]
+* link:{demo-link}[Demos online en: {demo-link}]

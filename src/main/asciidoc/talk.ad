@@ -3,7 +3,8 @@
 :twitter-tag: ACCSA
 :conference-tag:
 :talk-tag: Best Practices
-:slide-link:
+:slide-link: http://bit.ly/accsa-design-patterns
+:demo-link: http://bit.ly/accsa-design-patterns-demo
 :linkattrs:
 
 include::footer.ad[]
@@ -99,4 +100,4 @@ image::MVP-vs-MVC.png[background, size=auto]
 * Los patrones de diseño y arquitectura son soluciones probadas para gran cantidad de problemas.
 * Se deben aplicar con criterio, pueden agregar complejidad extra.
 
-// include::self.ad[]
+include::self.ad[]
