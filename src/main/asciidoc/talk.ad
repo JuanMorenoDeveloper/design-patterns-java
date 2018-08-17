@@ -1,0 +1,102 @@
+= Patrones de diseño POO / IU / Arquitectura
+:icons: font
+:twitter-tag: ACCSA
+:conference-tag:
+:talk-tag: Best Practices
+:slide-link:
+:linkattrs:
+
+include::footer.ad[]
+
+[NOTE.speaker]
+====
+Documentación en:
+https://www.oodesign.com/
+====
+== !
+image::pattern-design-4pwbdv1y.jpg[background, size=auto]
+// Fuente: https://standaserigraf.wordpress.com/2015/09/30/pattern-design-tecnica-artistica-que-se-ocupa-de-la-creacion-de-patrones-graficos/
+
+[NOTE.speaker]
+====
+¿Qué son los patrones de diseño?
+
+Los patrones de diseño son unas técnicas para resolver problemas comunes en el desarrollo de software y otros ámbitos referentes al diseño de interacción o interfaces.
+Ver: https://es.wikipedia.org/wiki/Patr%C3%B3n_de_dise%C3%B1o
+====
+== Contenido
+* Patrones POO
+* Patrones POO - Comportamiento
+* Patrones POO - Estructura
+* Patrones de Arquitectura
+* Patrones de Arquitectura - MVP
+* Conclusiones
+
+== Patrones POO
+* Soluciones a problemas comunes
+* Estrategias probadas por la industria
+* Independientes de lenguaje de programación (En lenguajes funcionales se pueden implementar con algunas diferencias)
+
+== Patrones POO - Tipos
+* Creación (Como se inician, presentan o recolectan objetos)
+* Estructura (Relación de objetos / classes)
+* Comportamiento (Gestión de algoritmos, comunicación)
+
+== ¿Aplicar patrones OOP a todo?
+image::thinking-person-md.png[background, size=auto]
+// Fuente: http://www.clker.com/clipart-thinking-person-1.html
+
+== Patrón OOP de comportamiento - Strategy
+
+* *Objetivo*: Seleccionar algoritmos en runtime.
+* *Ejemplo*: Un partido de fútbol.
+
+== UML - Strategy
+image::strategy-pattern.gif[background, size=auto]
+//Fuente: https://www.oodesign.com/
+
+== Patrón OOP de comportamiento - Strategy Demo
+
+== Patrón OOP de estructura - Decorator
+
+* *Objetivo*: Extender funcionalidades de un clase sin modificarla.
+* *Ejemplo*: Agregar un piso a una casa.
+
+== UML - Decorator
+image::decorator-pattern.png[background, size=auto]
+//Fuente: https://www.oodesign.com/
+
+== Patrón OOP de estructura - Decorator Demo
+
+== Patrones de arquitectura
+* Aplican a diseño de sistemas, no a nivel de clases
+* Ejemplos de arquitectura son: Hexagonal, Onion, DCI, BCE, Screaming, Clean.
+* Ejemplos de arquitectura para UI: MVC, MVP
+
+== Patrones de arquitectura - MVP
+* El patron MVP es similar al MVC. Es derivado a partir de MVC, pero reemplaza el controlador por el presentador.
+* Divide la aplicación en tres grandes aspectos: Modelo, Vista y Presentador
+* Alternativas: Model View ViewModel (MVVM)
+
+== UML - MVP
+image::MVP.png[background, size=auto]
+//Fuente: https://www.codeproject.com/Articles/42830/Model-View-Controller-Model-View-Presenter-and-Mod
+
+== Responsabilidades - MVP
+image::mvp-responsabilities.png[background, size=auto]
+//Fuente: https://www.codeproject.com/Articles/42830/Model-View-Controller-Model-View-Presenter-and-Mod
+
+== Patrones de arquitectura - MVP
+* MVP vs MVC
+* MVP delega la mayoría del trabajo al presentador y remueve el controlador.
+* El presentador encapsula el estado y los comandos de la vista. El presentador es el mediador entre la vista y el modelo
+* La vista esta separada del modelo => mejor separación de responsabilidades
+
+== MVP vs MVC
+image::MVP-vs-MVC.png[background, size=auto]
+
+== Conclusiones
+* Los patrones de diseño y arquitectura son soluciones probadas para gran cantidad de problemas.
+* Se deben aplicar con criterio, pueden agregar complejidad extra.
+
+// include::self.ad[]
