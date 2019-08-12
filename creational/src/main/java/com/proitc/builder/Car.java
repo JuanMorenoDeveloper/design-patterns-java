@@ -1,28 +1,26 @@
 package com.proitc.builder;
 
-// Car is ConcreteBuilder
-class Car implements IBuilder {
+class Car {
 
-  private Product product = new Product();
+  private final String body;
+  private final int wheels;
+  private final boolean hasHeadLigths;
 
-  @Override
-  public void buildBody() {
-    product.add("This is a body of a Car");
+  Car(String body, int wheels, boolean hasHeadLigths) {
+    this.body = body;
+    this.wheels = wheels;
+    this.hasHeadLigths = hasHeadLigths;
   }
 
-  @Override
-  public void insertWheels() {
-    product.add("4 wheels are added");
+  public String getBody() {
+    return body;
   }
 
-  @Override
-  public void addHeadlights() {
-    product.add("2 Headlights are added");
+  public int getWheels() {
+    return wheels;
   }
 
-  @Override
-  public Product getVehicle() {
-    return product;
+  public boolean isHasHeadLigths() {
+    return hasHeadLigths;
   }
-
 }

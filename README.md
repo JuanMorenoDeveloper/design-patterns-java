@@ -7,3 +7,7 @@
 ## Structural
 
 * Decorator
+
+## Creational
+
+* Builder

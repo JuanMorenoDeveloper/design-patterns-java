@@ -63,11 +63,21 @@ image::strategy-pattern.gif[background, size=auto]
 * *Objetivo*: Extender funcionalidades de un clase sin modificarla.
 * *Ejemplo*: Agregar un piso a una casa.
 
+== Patrón OOP de estructura - Decorator Demo
+
 == UML - Decorator
 image::decorator-pattern.png[background, size=auto]
-//Fuente: https://www.oodesign.com/
 
-== Patrón OOP de estructura - Decorator Demo
+== Patrón OOP de Construcción - Builder
+
+* *Objetivo*: Inicializar un objeto complejo, permitiendo un control completo en el proceso de construcción.
+* *Ejemplo*: Convertir un objeto de RTF a ASCII.
+
+== Patrón OOP de Construcción - Builder Demo
+
+== UML - Builder
+image::builder-pattern.png[background, size=auto]
+//Fuente: https://www.oodesign.com/
 
 == Patrones de arquitectura
 * Aplican a diseño de sistemas, no a nivel de clases
