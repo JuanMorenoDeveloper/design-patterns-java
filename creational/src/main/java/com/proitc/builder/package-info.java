@@ -4,4 +4,4 @@
  * closed for modification. The core concept applies when we want to add some specific
  * functionalities to some specific object instead of to the whole class.
  */
-package com.proitc.decorator;
+package com.proitc.builder;

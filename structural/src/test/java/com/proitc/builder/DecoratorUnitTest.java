@@ -1,4 +1,4 @@
-package com.proitc.decorator;
+package com.proitc.builder;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.spy;

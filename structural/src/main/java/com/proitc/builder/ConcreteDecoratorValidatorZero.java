@@ -1,4 +1,4 @@
-package com.proitc.decorator;
+package com.proitc.builder;
 
 class ConcreteDecoratorValidatorZero extends AbstractDecorator {
 
