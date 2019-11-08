@@ -35,19 +35,19 @@
     <theme.dir>${project.slides.directory}/theme</theme.dir>
     <!-- Test versions -->
     <mockito-core.version>2.13.0</mockito-core.version>
-    <junit.jupiter.version>5.2.0</junit.jupiter.version>
+    <junit.jupiter.version>5.5.2</junit.jupiter.version>
     <assertj.version>3.10.0</assertj.version>
     <mockito-core.version>2.21.0</mockito-core.version>
     <!-- Plugins versions -->
     <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
-    <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
+    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
     <maven-pmd-plugin.version>3.9.0</maven-pmd-plugin.version>
     <spotbugs-maven-plugin.version>3.1.1</spotbugs-maven-plugin.version>
     <maven.sevntu.checkstyle.plugin.version>1.27.0</maven.sevntu.checkstyle.plugin.version>
     <maven.sevntu.checkstyle.plugin.version>1.27.0</maven.sevntu.checkstyle.plugin.version>
     <maven.sevntu-checkstyle-check.checkstyle.version>8.18</maven.sevntu-checkstyle-check.checkstyle.version>
-    <maven.jacoco.plugin.version>0.8.0</maven.jacoco.plugin.version>
+    <maven.jacoco.plugin.version>0.8.5</maven.jacoco.plugin.version>
     <linkXRef>false</linkXRef>
     <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
     <download-maven-plugin.version>1.4.1</download-maven-plugin.version>
