@@ -46,7 +46,7 @@
     <spotbugs-maven-plugin.version>3.1.1</spotbugs-maven-plugin.version>
     <maven.sevntu.checkstyle.plugin.version>1.27.0</maven.sevntu.checkstyle.plugin.version>
     <maven.sevntu.checkstyle.plugin.version>1.27.0</maven.sevntu.checkstyle.plugin.version>
-    <maven.sevntu-checkstyle-check.checkstyle.version>8.18</maven.sevntu-checkstyle-check.checkstyle.version>
+    <maven.sevntu-checkstyle-check.checkstyle.version>8.29</maven.sevntu-checkstyle-check.checkstyle.version>
     <maven.jacoco.plugin.version>0.8.5</maven.jacoco.plugin.version>
     <linkXRef>false</linkXRef>
     <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
